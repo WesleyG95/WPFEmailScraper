@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfEmailScraper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Email Scraper 1.0" Height="200" Width="318" Icon="Icon1.ico" ResizeMode="CanMinimize" WindowState="Minimized" Cursor="Arrow">
+    <Grid>
+        <TextBox x:Name="URLTextBox" HorizontalAlignment="Left" Height="23" Margin="38,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" GotFocus="URLTextBox_GotFocus"/>
+        <Button x:Name="ScrapeEmailsButton" Content="Scrape Emails" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="290" Click="ScrapeEmailsButton_Click" IsDefault="True"/>
+        <ListBox x:Name="ResultsListBox" HorizontalAlignment="Left" Height="100" Margin="10,60,0,0" VerticalAlignment="Top" Width="290"/>
+        <Label Content="URL" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ClearURLTextBoxButton" Content="Clear" HorizontalAlignment="Left" Margin="261,5,0,0" VerticalAlignment="Top" Width="39" Click="ClearURLTextBoxButton_Click"/>
+
+    </Grid>
+</Window>

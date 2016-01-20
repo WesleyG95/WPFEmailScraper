@@ -54,10 +54,6 @@ namespace WpfEmailScraper
                         _sitesScraped.Add(new Uri(uri.AbsoluteUri));
                         _results.UnionWith(es.Results);
                     }
-                    //foreach (MailAddress email in es.Results)
-                    //{
-                    //    _results.Add(email);
-                    //}
                 }
             }
             catch
